@@ -3,7 +3,7 @@ import time
 import datetime
 
 time.sleep(3)
-print('MadeByMirosxwbr!!!')
+print('MadeByMirosxwbr3!!!')
 
 # Служебные
 def respawn():
