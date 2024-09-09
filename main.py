@@ -1,9 +1,18 @@
 import pydirectinput
 import time
 import datetime
+import tkinter
+
 
 time.sleep(3)
 print('Made by MIROSXWBR')
+
+
+
+
+
+
+
 
 # Служебные
 def respawn():
@@ -171,9 +180,9 @@ def hospital():
 
     respawn()
 
+
 def playGround():
     tonnel()
-
 
     d = datetime.datetime.now()
     cur_time = f"{d.hour}:{d.minute}:{d.second}, playground"
@@ -189,9 +198,9 @@ def playGround():
 
     respawn()
 
+
 def school():
     tonnel()
-
 
     d = datetime.datetime.now()
     cur_time = f"{d.hour}:{d.minute}:{d.second}, school"
@@ -236,10 +245,6 @@ def beach():
     respawn()
 
 
-
-
-
-
 def salon():
     tonnel()
 
@@ -261,43 +266,53 @@ def salon():
     respawn()
 
 
-
-
-
-
-
-
-
-
-
-
 def commands():
-    time.sleep(2)
-    drink()
+    time.sleep(3)
+    while True:
 
-    time.sleep(2)
-    eat()
+        time.sleep(2)
+        drink()
 
-    time.sleep(2)
-    sleep()
+        time.sleep(2)
+        eat()
 
-    time.sleep(2)
-    bath()
+        time.sleep(2)
+        sleep()
 
-    time.sleep(2)
-    pizza()
+        time.sleep(2)
+        bath()
 
-    time.sleep(2)
-    playGround()
+        time.sleep(2)
+        pizza()
 
-    time.sleep(2)
-    school()
+        time.sleep(2)
+        playGround()
 
-    time.sleep(2)
-    beach()
+        time.sleep(2)
+        school()
 
-    time.sleep(2)
-    salon()
+        time.sleep(2)
+        beach()
 
-while True:
-    commands()
+        time.sleep(2)
+        salon()
+
+
+def click_button():
+    global clicks
+    clicks += 1
+    # изменяем текст на кнопке
+    btn["text"] = f"Clicks {clicks}"
+
+def prinat():
+    print('hui')
+
+
+root = tkinter.Tk()
+root.title("MIROSXWBR'S BOT")
+root.geometry("500x150")
+
+btn = tkinter.Button(text="Запустить бота", command=commands, width=100, height=5)
+btn.pack(padx=120, pady=50)
+
+root.mainloop()
