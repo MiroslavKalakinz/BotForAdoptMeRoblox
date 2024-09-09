@@ -5,7 +5,7 @@ import tkinter
 
 
 time.sleep(3)
-
+print('Made by MIROSXWBR')
 
 
 
