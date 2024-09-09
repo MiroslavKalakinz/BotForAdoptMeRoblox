@@ -3,7 +3,7 @@ import time
 import datetime
 import tkinter
 
-
+# надо добавить звук
 time.sleep(3)
 print('Made by MIROSXWBR')
 
