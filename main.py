@@ -1,14 +1,15 @@
+# version 0.8
 import pydirectinput
 import time
 import datetime
 import tkinter
+import playsound
 
 
 time.sleep(3)
 print('Made by MIROSXWBR')
 
-
-
+playsound.playsound('start.mp3', True)
 
 
 
@@ -297,15 +298,6 @@ def commands():
         time.sleep(2)
         salon()
 
-
-def click_button():
-    global clicks
-    clicks += 1
-    # изменяем текст на кнопке
-    btn["text"] = f"Clicks {clicks}"
-
-def prinat():
-    print('hui')
 
 
 root = tkinter.Tk()
