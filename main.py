@@ -296,15 +296,6 @@ def commands():
         salon()
 
 
-def click_button():
-    global clicks
-    clicks += 1
-    # изменяем текст на кнопке
-    btn["text"] = f"Clicks {clicks}"
-
-def prinat():
-    print('hui')
-
 
 root = tkinter.Tk()
 root.title("MIROSXWBR'S BOT")
