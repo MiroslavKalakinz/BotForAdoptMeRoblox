@@ -1,3 +1,4 @@
+# version 0.8
 import pydirectinput
 import time
 import datetime
