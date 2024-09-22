@@ -8,7 +8,7 @@ import tasks
 time.sleep(3)
 print('Made by MIROSXWBR')
 
-# playsound.playsound('start.mp3', True)
+playsound.playsound('start.mp3', True)
 
 
 
